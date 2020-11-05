@@ -40,7 +40,7 @@ void draw() {
     // none
   } else if (T % 4 < 3) {
     // exhale
-    exhale = map(cos(T * PI * 2), 1, -1, 0, 1);
+    exhale = map(cos(max(T*2 % 4,1) * PI * 2), 1, -1, 0, 1);
   }
   println(inhale,exhale);
   pushMatrix();
